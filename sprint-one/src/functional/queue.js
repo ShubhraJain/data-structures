@@ -7,9 +7,7 @@ var Queue = function() {
   // Implement the methods below
 
   someInstance.enqueue = function(value) {
-    // Add a string to the back of the queue
-    // var currentSize = someInstance.size();
-    // someInstance.storage[currentSize + 1] = value; 
+    // Add a string to the back of the queue 
     var currentSize = someInstance.size();
     if (currentSize > 0) {
       for (var i = currentSize; i > -1; i--) {
