@@ -16,22 +16,7 @@ treeMethods.addChild = function(value) {
 
 treeMethods.contains = function(target) {
   // base case: no children
-    //determine if search is true
-  // var search = function(obj, searchItem) {
-  //   if (obj.value === searchItem) {
-  //     return true;
-  //   } 
-  // };
-  // //else
-  //   //search || contains on next level
-  // var i = -1;
-  // if (this.children.length === 0) {
-  //   return search(this, target);
-    
-  // } else if (i < this.children.length) {
-  //   i++;
-  //   return search(this, target) || this.contains.call(this.children[i], target);
-  // }
+    //determine if search is trees
   var res = false;
   
   if (this.value === target) {
@@ -46,30 +31,6 @@ treeMethods.contains = function(target) {
   
   return res;
   
-  
-  
-  
-  
-  
-  
-  
-  
-  // var search = function(currNode) {
-  //   // perform check on each of the children in the tree and 
-  //   if (currNode.value === target) {
-  //     return true;
-  //   }
-  // };
-  
-  // if (!this.children.length) {
-  //   search(this);
-  // } else {
-  //   for (var i = 0; i < this.children.length; i++) {
-  //     // if current tree is not equal to target and recurse
-  //     search(this.children[i]);
-  //     this.contains(this.children[i]);
-  //   }
-  // }  
 };
 
 
