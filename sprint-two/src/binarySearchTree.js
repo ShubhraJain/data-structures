@@ -65,4 +65,8 @@ binaryTreeMethods.depthFirstLog = function(callBack) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
+ binaryTreeMethods.insert : Constant complexity, O(1)
+ binaryTreeMethods.contains : Constant complexity, O(1)
+ binaryTreeMethods.depthFirstLog : Constant complexity, O(1)  but may change if callback has
+ higher complexity.
  */
