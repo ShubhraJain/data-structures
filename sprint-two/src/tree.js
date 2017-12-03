@@ -65,6 +65,13 @@ treeMethods.removeFromParent = function(target) {
   search(this, target);
   return cutTree;
 };
+
+treeMethods.traverse = function(callBack) {
+    callBack(this.value);
+    (this.children).forEach(function(child) {
+        this.traverse(callBack);
+    });
+}
   
 
 /*
