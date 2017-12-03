@@ -33,7 +33,7 @@ var LinkedList = function() {
       } else {
         //head is equal to head.next
         list.head = currentHead.next;
-        delete currentHead;
+        // delete currentHead;
       }
       return currentHeadVal;
     }
